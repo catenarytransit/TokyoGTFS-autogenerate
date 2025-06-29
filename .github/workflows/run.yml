@@ -18,5 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Create Python Virtual Environment
-        run: python -m venv --upgrade-deps .venv
+        run: |
+          python -m venv --upgrade-deps .venv
+          . .venv/bin/activate
     
